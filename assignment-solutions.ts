@@ -11,3 +11,12 @@ function filterByRating(
 		return singleItem.rating >= 4;
 	});
 }
+
+function concatenateArrays<T>(...arrays: T[][]): T[] {
+	let concatenatedArray: T[] = [];
+	arrays.map((singleArray) => {
+		concatenatedArray = [...concatenatedArray, ...singleArray];
+	});
+
+	return concatenatedArray;
+}
