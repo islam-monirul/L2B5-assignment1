@@ -52,3 +52,22 @@ function processValue(value: string | number): number {
 	if (typeof value === "string") return value.length;
 	else return value * 2;
 }
+
+interface Product {
+	name: string;
+	price: number;
+}
+
+function getMostExpensiveProduct(products: Product[]): Product | null {
+	if (products.length === 0) return null;
+	else {
+		let mostExpensive: Product = products[0];
+		products.map((individualProduct) => {
+			if (individualProduct.price > mostExpensive.price) {
+				mostExpensive = individualProduct;
+			}
+		});
+
+		return mostExpensive;
+	}
+}
