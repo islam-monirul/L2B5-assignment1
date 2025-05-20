@@ -6,7 +6,6 @@ function formatString(input: string, toUpper?: boolean): string {
 function filterByRating(
 	items: { title: string; rating: number }[]
 ): { title: string; rating: number }[] {
-	// using array filter method to get the desired items with rating of 4 or more
 	return items.filter((singleItem) => {
 		return singleItem.rating >= 4;
 	});
