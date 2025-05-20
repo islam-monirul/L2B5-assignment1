@@ -1,5 +1,9 @@
 ### Level 2 (Batch 5) - Assignment 1 by Monirul Islam
 
+You can find the solutions in "assignment-solutions.ts" file.
+
+Blog for Assignment:
+
 While learning `TypeScript`, I have encountered a bunch of topics that were really confusing to me. In today's blog, I will try to answer the following two questions from my own understanding that I have chosen from a list of given topics:
 
 1. What are some differences between interfaces and types in TypeScript?
